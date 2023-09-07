@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:stage_one/src/navigation_controls.dart';
 import 'package:stage_one/src/web_view_stack.dart';
 import 'package:stage_one/util/color_theme.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -37,6 +38,9 @@ class _WebViewKitState extends State<WebViewKit> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          actions: [
+            NavigationControls(controller: controller),
+          ],
         ),
         backgroundColor: immaYellowish,
         body: WebViewStack(controller: controller),

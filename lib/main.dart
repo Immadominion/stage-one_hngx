@@ -46,10 +46,6 @@ class _WebViewAppState extends State<WebViewApp> {
             fontWeight: FontWeight.bold,
           ),
         ),
-
-        // actions: [
-        //   NavigationControls(controller: controller),
-        // ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
